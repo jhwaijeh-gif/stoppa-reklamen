@@ -222,6 +222,11 @@
   .feat h3{font-family:var(--serif);font-weight:600;font-size:25px;color:var(--ink);margin:15px 0 8px;}
   .feat p{font-size:15.5px;color:var(--text);line-height:1.62;max-width:660px;}
   @media(max-width:820px){.feat{padding:26px 22px;}}
+  /* Telefon: numret ovanför rubriken så att text och bilder får hela bredden (Judes besked 2026-10-13) */
+  @media(max-width:640px){
+    .step{grid-template-columns:minmax(0,1fr);gap:12px;padding:26px 0;}
+    .step-n{width:30px;height:30px;font-size:13px;}
+  }
 </style>
 </head>
 <body>
@@ -355,7 +360,7 @@
           <h3>Klistra in prompten</h3>
           <p>Det här är textrutan i Claude. Klistra in prompten nedan och skicka. Den är skriven i två steg, så Claude stannar och frågar dig innan den skriver något.</p>
           <figure class="fig">
-            <img src="images/claude-prompt-bar.png" alt="Claudes textruta där du klistrar in prompten">
+            <img src="images/claude-prompt-bar.png?v=2" alt="Claudes textruta där du klistrar in prompten">
             <figcaption>Steg 2 · Klistra in i textrutan i Claude</figcaption>
           </figure>
           <div class="prompt">
